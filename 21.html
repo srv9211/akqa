@@ -1,0 +1,55 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function clickCounter(){
+            if(typeof(Storage)!== "undefined"){
+                if(localStorage.clickcount){
+                    localStorage.clickcount = Number(localStorage.clickcount)+1;
+                }
+                else{
+                    localStorage.clickcount=1;
+                }
+                document.getElementById("result").innerHTML ="you have clicked the button "+ localStorage.clickcount+" time(s).";
+            }
+            else{
+                document.getElementById("result").innerHTML="Sorry your browser does not support web localStorage";
+            }
+        }
+    </script>
+</head>
+<body>
+
+<p><button onclick="clickCounter()" type="button">Spank me</button></p>
+<div id="result"></div>
+
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function clickCounter(){
+            if(typeof(Storage)!== "undefined"){
+                if(sessionStorage.clickcount){
+                    sessionStorage.clickcount = Number(sessionStorage.clickcount)+1;
+                }
+                else{
+                    sessionStorage.clickcount=1;
+                }
+                document.getElementById("result").innerHTML ="you have spanked the button "+ sessionStorage.clickcount+" time(s).";
+            }
+            else{
+                document.getElementById("result").innerHTML="Sorry your browser does not support web localStorage";
+            }
+        }
+    </script>
+</head>
+<body>
+
+<p><button onclick="clickCounter()" type="button">Spank me</button></p>
+<div id="result"></div>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <h2>Form Attributes</h2>
+
+    <form id="userRegForm" action="/test.php" autocomplete="on" method="get">
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" name="fname" value="Sourav" readonly disabled><br> 
+        <!-- readonly will not allow to edit the value inside the input and disabled will give it a grey color -->
+        <!-- <input type="text" id="fname" name="fname" value="Sourav" autofocus autocomplete=""><br>  -->
+        <!--  -->
+        
+        <label for="pin">Pin Code:</label>
+        <input type="text" id="pin" name="pin" size="4" maxlength="4" autofocus><br>
+        <!-- length of the pin won't exceed 4 -->
+
+        <label for="quan">Enter a num b/w 1-5:</label>
+        <input type="number" name="quan" id="quan" min="1" max="5"><br>
+        <!-- you can select the number b/w 1 and 5 -->
+
+        <label for="files">Select files:</label>
+        <input type="file" id="files" name="files" multiple><br>
+        <!-- you can select multiple files -->
+
+        <label for="country_code">Country Code:</label>
+        <input type="text" name="country_code" id="country_code" pattern="[A-Za-z]{3}" title="Three letter country code"><br>
+        <!-- here you have the pattern -->
+        
+        <label for="points">Enter points:</label>
+        <input type="number" name="points" id="points" step="4" value="65"><br>
+
+        <input type="submit" formenctype="multipart/form-data" formtarget="_blank" formnovalidate="" name="">
+        <!-- formtarget opens new tab after submission -->
+
+    </form>
+    
+</body>
+</html>

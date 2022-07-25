@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width-device, initial-scale=1">
+
+    <style type="text/css">
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        header{
+            background-color: lightsteelblue;
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+        }
+        nav {
+            float: left;
+            width: 30%;
+            height: 300px;
+            background: #ccc;
+            padding: 20px;
+        }
+        nav ul{
+            list-style-type: none;
+            padding: 0;
+        }
+
+        article{
+            float: left;
+            padding: 20px;
+            width: 70%;
+        }
+
+        section::after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+        footer{
+            background-color: lightsteelblue;
+            text-align: center;
+            padding: 10px;
+            color: white;
+        }
+        /* responsive web design template for small screens */
+        @media (max-width: 600px) {
+            nav, article{
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <h2>Responsive web layout</h2>
+    <p>In this example, we have created a header, two columns/boxes and a footer. On the smaller screens, the column will stack on the top of each other</p>
+    <p>Resizing will happen automatically based on the responsive effect</p>
+
+    <header>
+        <h2>Cities</h2>
+    </header>
+
+    <section>
+        <nav>
+            <ul>
+                <li><a href="#">London</a></li>
+                <li><a href="#">Paris</a></li>
+                <li><a href="#">Tokyo</a></li>
+            </ul>
+        </nav>
+
+        <article>
+            <h1>London</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora, dolore saepe? Dolores nam molestias quis ipsum nihil, delectus id blanditiis illum quaerat repellat mollitia qui doloribus adipisci nobis nulla sint?</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora, dolore saepe? Dolores nam molestias quis ipsum nihil, delectus id blanditiis illum quaerat repellat mollitia qui doloribus adipisci nobis nulla sint?</p>
+        </article>
+    </section>
+
+    <footer>
+        <a href="https://facebook.com">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAdVBMVEX///8Yd/IAcvIAbvL1+v4SevKWuvgAcPGHr/elxfkAb/INdPIGc/L7/v/Q4fy30fqyzvrw9v7e6v0jfvPC1/sAaPGgwvnV5Pzr8/681fvl7f2KtfhsoPVKjfQsgvNclvVMkPRzp/Znn/ZemvXH3Pt/qvaTuPhyXbNsAAADSklEQVR4nO3b63LaMBSFUWIb7EjmZhMC4Z7b+z9iC0lmmrbEspQzZ592f/+Z0RpjSxZiMGCMMcYYY4wxxhhjjDHGGGOMMcYYY4wxxtgvFatmspjOZrPpejFpHlbzYqw9pO+rmW62uzZzuXsvz1023O8O22p0+9ystMeX1nx92teurP3N73nv66wsz9bjabmw6RxPj879BfeHtS7vltqDjWi1GbpO3UflrfZwe7eqfBnKMykc9fLZE963rpfPnHBUBt9/JoXFoe8FNCZctVl/oCVhM+z9DbUlfGijgHaERdwVtCMc7+o4oBlh1W+atyecRkwTpoRFtM+K8DFmIrQknMR/R40Ij5EThRnhOk8AmhAeUi6hBeF9yl1oQnhKeJDaEKZdQgPChOWMEeFT7JLbinA+TAPiCyf9Xiou+/mfgt/zfu0hzHK/226Wt59a3msTOgqe7r3z1fNce7j9m7eBwLJFv9+u1ATOFa6y+rNo4GzoptoDjW4Z9KDJF9rjjK8KWZQ6o7fgpceAFU39pD3KlEJe732jPcqU9t3Ceqs9yKRC7kL0RcuXjQMepa32IJMquqdD41/SonubrZxpDzKpAGE+0R5kUiFCm6e6PgoQukJ7kEkFCDPtMaYVIrT62vQWhRTiRyGF+FFIIX4UUogfhRTiRyGF+P0H+zQBe97aY+yuuhlerxN489Wnf9YCbKfG/9EgIL8HuE2DfsiOFh60eQNhYX3S5g2EhSXCqTZRoUM4hyJ7DRFOMYgKIVY8kkK/19adkxTWj9q6c5LCcqStOycpxDizKCnEOMYgKoQ4Fi0pHGrjLgkKIdbdosLsRRt3SVAIse4WFbpnbdwlyWv4oI27JChsISYLQaHfIbxZSApRDvHLCbONtu0tOaEDOT4sJywh1t2iz1KA/e5zckKU/ymICf1Rm/aemBBk3S0oBFl3DwYveXm1EPzVD9+ttWnvrV9HV3vt/uuav/rhDcij9MvG//6v3DypQCF8FFKIH4UU4kchhfhRSCF+FFKIH4UU4kchhfhRSCF+FFKIH4UU4kchhfhRSCF+FFKIH4UU4kchhfhRSCF+FFKIH4UU4kchhfhRSCF+FFKIH4UU4kchhfhRSCF+FFL4Df0A5OFCR5kbfNAAAAAASUVORK5CYII=" alt="loading" style="width: 40px; height: 40px;">
+        </a>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style type="text/css">
+        #div1 {
+            width: 350px;
+            height: 70px;
+            padding: 10px;
+            border: 1px solid red;
+        }
+
+    </style>
+
+    <script type="text/javascript">
+        function allow_drop(ev) {
+            ev.preventDefault();
+        }
+
+        function drag(ev){
+            ev.dataTransfer.setData("text", ev.target.id);
+        }
+        function drop(ev) {
+            ev.preventDefault();
+            var data = ev.dataTransfer.getData("text");
+            ev.target.appendChild(document.getElementById(data));
+        }
+    </script>
+</head>
+<body>
+    <p>Drag and Drop your image here</p>
+
+    <div id="div1" ondrop="drop(event)" ondragover="allow_drop(event)"></div> <br>
+
+    <img id="drag1" src="/Users/Sourav.Sharma/Desktop/Codes/pexels-photo-753626.jpeg" draggable="true" ondragstart="drag(event)" width="330" height="70">
+    
+</body>
+</html>

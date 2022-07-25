@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        .city{
+            background-color: tomato;
+            color: yellow;
+            border: 1px solid black;
+            margin: 20px;
+            padding: 20px;
+        }
+        .main{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<button onclick="myfunction()">Hide elements</button>
+
+    <div class="main">
+        <h2>London</h2>
+        <p>Capital of England</p>
+    </div>
+    <div class="city">
+        <h2>Paris</h2>
+        <p>Capital of France</p>
+    </div>
+    <div class="city">
+        <h2>Tokyo</h2>
+        <p>Capital of Japan</p>
+    </div>
+
+    <h2 id="myheading2">This is an ID attribute</h2>
+
+    <script type="text/javascript">
+        function myfunction(){
+            var x = document.getElementsByClassName("city");
+            for(var i=0; i<x.length; i++){
+                x[i].style.display = "none";
+            }
+
+            function myfunction(){
+                var x = document.getElementById("myheading2");
+                x.style.display = "none";
+            }
+
+        }
+    </script>
+</body>
+</html>
